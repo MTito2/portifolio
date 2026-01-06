@@ -108,7 +108,7 @@
 
         <section class="projects" id="projects"> 
             <div class="projects__content">
-                <h1 class="projects__title">Projetos</h1>
+                <h2 class="projects__title">Projetos</h2>
                 <div class="projects__grid">
                     <div class="projects__item">
                         <img src="img/project-2.png" alt="" class="projects__img">
@@ -149,17 +149,61 @@
         </section>
 
         <section class="contact" id="contact"> 
-            <h2> Entre em Contato</h2>
-            <p>Se quiser conversar sobre projetos, oportunidades ou ideias, é só mandar uma mensagem.</p>
+            <div class="contact__title">
+                <h2> Entre em Contato</h2>
+                <p class="contact__desc">Se quiser conversar sobre projetos, oportunidades ou ideias, é só mandar uma mensagem.</p>
+            </div>
 
-            <form action="">
-                <label for="">Nome</label>
-                <input type="text" name="" id="">
-                <label for="">E-mail</label>
-                <input type="text" name="" id="">
-                <label for="">Mensagem</label>
-                <input type="text" name="" id="">
-            </form>
+            <div class="contact__container">
+                <form class="contact__form" action="">
+                    <div class="contact__input-container">
+                        <label for="contactName">Nome</label>
+                        <input class="contact__input" type="text" name="name" id="contactName">
+                    </div>
+
+                    <div class="contact__input-container">
+                        <label for="contactEmail">E-mail</label>
+                        <input class="contact__input" type="text" name="email" id="contactEmail">
+                    </div>
+
+                    <div class="contact__input-container">
+                        <label for="contactMessage">Mensagem</label>
+                        <textarea class="contact__input-text-area" name="message" id="contactMessage"></textarea>
+                    </div>
+
+                    <button id="contactBtn">Enviar</button>
+                </form>
+
+                <div class="contact__info-content">
+
+                    <div class="contact__text-container">
+                        <div class="contact__text">
+                            <h3>Disponibilidade</h3>
+                            <p>Mariana, MG - Brasil | Remoto</p>
+                        </div>
+    
+                        <div class="contact__text">
+                            <h3>Contato</h3>
+                            <p>mateustito166@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact__icons">
+                        <a href="https://github.com/MTito2" target="_blank">
+                            <img src="icons/git-icon.svg" alt="Abrir perfil GitHub">
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/mateus-da-cunha-tito/" target="_blank">
+                            <img src="icons/linkedin-icon.svg" alt="Abrir perfil linkedIn">
+                        </a>
+
+                        <a href="https://www.instagram.com/m.cunhat/" target="_blank">
+                        <img src="icons/instagram-icon.svg" alt="Abrir perfil instagram">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
