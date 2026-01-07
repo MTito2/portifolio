@@ -42,7 +42,7 @@ main {
 
 .hero__nav-item {
     font-weight: 450;
-    font-size: 20px;
+    font-size: 16px;
     opacity: 1;
     transform: translateY(1px);
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -98,7 +98,7 @@ main {
 }
 
 .hero__desc {
-    width: 300px;
+    width: 400px;
     font-size: 16px;
 }
 
@@ -161,7 +161,7 @@ main {
 .about__rows {
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 30px;
     gap: 10px;
 }
 
@@ -205,7 +205,7 @@ main {
 }
 
 .projects__title {
-    padding: 60px;
+    padding: 30px;
 }
 
 .projects__grid {
@@ -252,10 +252,11 @@ main {
 } 
 
 .contact {
-    height: 100vh;
+    height: calc(100svh - 53px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
 }
 
 .contact__title {
@@ -274,7 +275,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border: solid #58595B 1px;
+    border: solid #58595B 2px;
     border-radius: 3px;
     width: 90%; 
     height: 70%;
@@ -286,14 +287,15 @@ main {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     padding: 60px 40px;
-    gap: 30px;
+    gap: 40px;
 }
 
 .contact__input-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -301,6 +303,7 @@ main {
     border: none;
     border-bottom: #58595B solid 1px;
     outline: none;
+    color: #58595B;
 }
 
 .contact__input-text-area {
@@ -308,6 +311,7 @@ main {
     border: #58595B solid 1px;
     border-radius: 3px;
     outline: none;
+    color: #58595B;
 }
 
 #contactMessage {
@@ -363,4 +367,24 @@ main {
     justify-content: center;
     gap: 10px;
     width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+    height: 53px;
+    border-top: #58595B solid 1px;
+    font-size: 12px;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
 }
