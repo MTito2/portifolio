@@ -167,3 +167,89 @@ main {
 }
 
 
+@media (max-width: 480px) {
+    main {
+        width: 93%;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .content-wrap{
+        width: 100%;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .title-content {
+        width: 100%;
+    }
+
+    .content-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .text-content-1 {
+        width: 100%;
+        gap: 5px;
+        padding-bottom: 20px;
+    }
+
+    .text-content-2 {
+        width: 100%;
+        gap: 5px;
+    }
+
+    .tech-container {
+        padding-top: 30px;
+    }
+
+    .links-container {
+        padding-top: 30px;  
+    }
+
+    .project-img {
+        width: 100%;
+        height: 100%;
+        position: relative;        position: relative;
+    }
+
+    .btn-chevron {
+        padding: 0;
+        width: 40px;
+        padding-bottom: 120px;
+        position: absolute;
+    }
+
+    .btn-icon {
+        width: 25px
+    }
+
+    #prev-project {
+        left: 10px;
+    }
+
+    #next-project {
+        right: 10px;
+    }
+
+    .links-desc {
+        font-size: 12px;
+    }
+
+    img {
+        width: 25px;
+    }
+}

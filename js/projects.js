@@ -1,7 +1,13 @@
 const prevBtn = document.getElementById("prev-project")
 const nextBtn = document.getElementById("next-project")
 
-const projectPages = JSON.parse(localStorage.getItem("page_projects"))
+const projectPages = JSON.parse(localStorage.getItem("page_projects")) || []
+console.log(projectPages)
+
+if (!projectPages.length) {
+    console.warn("Lista de projetos vazia")
+}
+
 const projectNumbers = projectPages.length
 const currentPath = window.location.pathname
 const currentPage = currentPath.split("/").at(-1)
@@ -9,11 +15,11 @@ const currentPageIndex = projectPages.indexOf(currentPage)
 
 const projectNumberEl = document.getElementById("project-number")
 
-prevBtn.addEventListener("click", () => {
+prevBtn?.addEventListener("click", () => {
     acessPreviusPage()
 })
 
-nextBtn.addEventListener("click", () => {
+nextBtn?.addEventListener("click", () => {
     acessNextPage()
 })
 

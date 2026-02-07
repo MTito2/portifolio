@@ -1,14 +1,44 @@
+const hero = document.querySelector(".hero")
+const menuEl = document.querySelector(".hero__menu")
 const btnTalkEl = document.getElementById("btnTalk")
 
 const projectsItem = document.querySelectorAll(".projects__item")
 const pageList = new Array
 const actuallyPage = window.location.pathname.replace("/", "")
 
+function createMenuContainer() {
+    const menuContainer = document.createElement("div")
+    const menuList = document.createElement("ul")
+    const items = ["Sobre", "Projetos", "Contato"]
+    
+    menuContainer.className = "hero__menu-container"
+    menuList.className = "hero__menu-list" 
+    
+    items.forEach(item => {
+        const menuItem = document.createElement("li")
+        menuItem.className = "hero__menu-item"
+
+        menuItem.textContent = item
+        menuList.appendChild(menuItem)
+    })
+
+    menuContainer.appendChild(menuList)
+
+    return menuContainer
+}
+
+menuEl.addEventListener("click", () => {
+    const menuContainer = createMenuContainer()
+    hero.appendChild(menuContainer)
+})
+
 projectsItem.forEach(element => {
     pageList.push(element.dataset.title + ".html")
 });
 
 localStorage.setItem("page_projects", JSON.stringify(pageList))
+
+
 
 projectsItem.forEach(element => {
     element.addEventListener("click", () => {
