@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,85 +8,95 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <main>
-            <section class="hero" id="hero">
-                <header class="hero__header">
-                    <div class="hero__menu">
-                        <img src="icons/menu.svg" alt="">
-                    </div>
-
-                    <div class="hero__icons">
-                        <a href="https://github.com/MTito2" target="_blank">
-                            <img src="icons/git-icon.svg" alt="Abrir perfil GitHub">
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/mateus-da-cunha-tito/" target="_blank">
-                            <img src="icons/linkedin-icon.svg" alt="Abrir perfil linkedIn">
-                        </a>
-
-                        <a href="https://www.instagram.com/m.cunhat/" target="_blank">
-                        <img src="icons/instagram-icon.svg" alt="Abrir perfil instagram">
-                        </a>
-
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mateustito166@gmail.com&su=Contato%20do%20Portfólio&body=Olá%20Mateus,%20estou%20entrando%20em%20contato%20através%20do%20seu%20portfólio."
-                        target="_blank">
-                            <img src="icons/email-icon.svg" alt="Enviar e-mail">
-                        </a>
-                        
-                    </div>
-                    <nav class="hero__nav">
-                        <a href="#about" class="hero__nav-item">Sobre</a>
-                        <a href="#projects" class="hero__nav-item">Projetos</a>
-                        <a href="#contact" class="hero__nav-item">Contato</a>
-                    </nav>
-                </header>
-
-                <div class="hero__spacer"></div>
-                
-                <div class="hero__content">
-                    <div class="hero__text-group">
-                        <div class="hero__text">
-                            <h1 class="hero__main-title">Mateus da Cunha Tito</h1>
-                            <h3 class="hero__caption">Desenvolvedor Fullstack Junior</h3>
-                            <p class="hero__desc">Desenvolvedor de Software em formação, com foco em Python, Flask, SQL, integrações de API e construção de aplicações web. Experiência crescente em criar soluções práticas, estruturadas e voltadas para resolver problemas reais.</p>
-                        </div>
-                        
-                        <button id="btnTalkDesktop" class="hero__button hero__button--desktop">
-                            Vamos Conversar
-                        </button>
-                    </div>
-
-                    <div class="hero__img">
-                    <img src="img/hero-img.png" alt="">
-                    </div>
-                                        
-                    <button class="hero__button hero__button--mobile">
-                        Vamos Conversar
-                    </button>
-
+        <section class="hero" id="hero">
+            <header class="hero__header">
+                <div class="hero__menu">
+                    <img src="icons/menu.svg" alt="">
                 </div>
 
-            </section>
+                <div class="hero__icons">
+                    <a href="https://github.com/MTito2" target="_blank">
+                        <img src="icons/git-icon.svg" alt="Abrir perfil GitHub">
+                    </a>
 
-        <section class="about" id="about"> 
+                    <a href="https://www.linkedin.com/in/mateus-da-cunha-tito/" target="_blank">
+                        <img src="icons/linkedin-icon.svg" alt="Abrir perfil linkedIn">
+                    </a>
+
+                    <a href="https://www.instagram.com/m.cunhat/" target="_blank">
+                        <img src="icons/instagram-icon.svg" alt="Abrir perfil instagram">
+                    </a>
+
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mateustito166@gmail.com&su=Contato%20do%20Portfólio&body=Olá%20Mateus,%20estou%20entrando%20em%20contato%20através%20do%20seu%20portfólio."
+                        target="_blank">
+                        <img src="icons/email-icon.svg" alt="Enviar e-mail">
+                    </a>
+
+                </div>
+                <nav class="hero__nav">
+                    <a href="#about" class="hero__nav-item">Sobre</a>
+                    <a href="#projects" class="hero__nav-item">Projetos</a>
+                    <a href="#contact" class="hero__nav-item">Contato</a>
+                </nav>
+            </header>
+
+            <div class="hero__spacer"></div>
+
+            <div class="hero__content">
+                <div class="hero__text-group">
+                    <div class="hero__text">
+                        <h1 class="hero__main-title">Mateus da Cunha Tito</h1>
+                        <h3 class="hero__caption">Desenvolvedor Fullstack Junior</h3>
+                        <p class="hero__desc">Desenvolvedor de Software em formação, com foco em Python, Flask, SQL,
+                            integrações de API e construção de aplicações web. Experiência crescente em criar soluções
+                            práticas, estruturadas e voltadas para resolver problemas reais.</p>
+                    </div>
+
+                    <button id="btnTalkDesktop" class="hero__button hero__button--desktop">
+                        Vamos Conversar
+                    </button>
+                </div>
+
+                <div class="hero__img">
+                    <img src="img/hero-img.png" alt="">
+                </div>
+
+                <button id="btnTalkMobile" class="hero__button hero__button--mobile">
+                    Vamos Conversar
+                </button>
+
+            </div>
+
+        </section>
+
+        <svg class="divider--wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#868E98" fill-opacity="1"
+                d="M0,64L80,58.7C160,53,320,43,480,53.3C640,64,800,96,960,96C1120,96,1280,64,1360,48L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+            </path>
+        </svg>
+
+        <section class="about" id="about">
             <div class="about__container">
                 <div class="about__media">
                     <img src="img/about-img.png" class="about__img" alt="">
-    
+
                     <div class="about__rows">
                         <div class="about__row">
                             <img src="icons/bike-icon.svg" alt="">
                             <p>Estou sempre em movimento, adoro praticar esportes.</p>
                         </div>
-        
+
                         <div class="about__row">
                             <img src="icons/book-icon.svg" alt="">
                             <p>Gosto de ler, isso me faz desacelerar e aprender muito.</p>
                         </div>
-        
+
                         <div class="about__row">
                             <img src="icons/coffee-icon.svg" alt="">
                             <p>Um bom café é item obrigatório no meu setup.</p>
@@ -94,8 +105,8 @@
                         <div class="about__row">
                             <img src="icons/music-icon.svg" alt="">
                             <p>Sempre programando com uma boa playlist de fundo.</p>
-                        </div>         
-                        
+                        </div>
+
                         <div class="about__row">
                             <img src="icons/shrub-icon.svg" alt="">
                             <p>Aprecio a natureza para renovar a criatividade.</p>
@@ -103,68 +114,82 @@
 
                         <div class="about__row">
                             <img src="icons/cat-icon.svg" alt="">
-                            <p><span class="about__text-bold">Fato Curioso:</span> Tenho um gato que já “aprovou” vários commits.</p>
+                            <p><span class="about__text-bold">Fato Curioso:</span> Tenho um gato que já “aprovou” vários
+                                commits.</p>
                         </div>
                     </div>
                 </div>
-                    <div class="about__content">
-                        <h3 class="about__title">Sobre mim</h3>
-                        <div class="about__text-content">
-                            <p>Atualmente sou estudante de Gestão da Tecnologia da Informação em fase final de formação e curso Análise e Desenvolvimento de Sistemas.</p>
-                            <p>Minha relação com a tecnologia começou bem cedo, sempre tive interesse em saber como as coisas funcionam. Com o passar do tempo fui aprimorando meus conhecimentos e hoje não tenho dúvidas que escolhi a área certa para seguir meu caminho profissional.</p>
-                            <p>Para mim, uma das partes mais importantes da programação é resolver problemas reais, aplico isso no dia a dia com projetos que me ajudam a alcançar meus objetivos, seja ser mais produtivo, adquirir conhecimento ou me organizar de alguma forma. Além disso trago essa ideia para meu trabalho atual, onde pude criar soluções que resolvem problemas.</p>
-                            <p>Quando não estou programando gosto de fazer atividades ao ar livre, praticar esportes, ler e passar o tempo com a família. </p>
-                        </div>
+                <div class="about__content">
+                    <h3 class="about__title">Sobre mim</h3>
+                    <div class="about__text-content">
+                        <p>Atualmente sou estudante de Gestão da Tecnologia da Informação em fase final de formação e
+                            curso Análise e Desenvolvimento de Sistemas.</p>
+                        <p>Minha relação com a tecnologia começou bem cedo, sempre tive interesse em saber como as
+                            coisas funcionam. Com o passar do tempo fui aprimorando meus conhecimentos e hoje não tenho
+                            dúvidas que escolhi a área certa para seguir meu caminho profissional.</p>
+                        <p>Para mim, uma das partes mais importantes da programação é resolver problemas reais, aplico
+                            isso no dia a dia com projetos que me ajudam a alcançar meus objetivos, seja ser mais
+                            produtivo, adquirir conhecimento ou me organizar de alguma forma. Além disso trago essa
+                            ideia para meu trabalho atual, onde pude criar soluções que resolvem problemas.</p>
+                        <p>Quando não estou programando gosto de fazer atividades ao ar livre, praticar esportes, ler e
+                            passar o tempo com a família. </p>
                     </div>
                 </div>
-            </section>
-            
-            <section class="projects" id="projects"> 
-                <div class="projects__content">
-                    <h2 class="projects__title">Projetos</h2>
-                    <div class="projects__grid">
 
-                        <div class="projects__item" data-title="bot-grm">
-                            <img src="img/project-5.png" alt="" class="projects__img">
-                
-                            <div class="projects__content-wrap">
-                                <div class="projects__text">
-                                    <p>Bot GRM: Bot de apontamentos do sistema GRM.</p>
-                                    <p class="projects__desc">Chatbot</p>
-                                </div>
-                            </div>
-                        </div>
- 
-                        <div class="projects__item" data-title="bot-pessoal">
-                            <img src="img/project-1.png" alt="" class="projects__img">
+        </section>
+
+        <svg class="divider--wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#868E98" fill-opacity="1"
+                d="M0,128L80,144C160,160,320,192,480,197.3C640,203,800,181,960,186.7C1120,192,1280,224,1360,240L1440,256L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+
+        <section class="projects" id="projects">
+            <div class="projects__content">
+                <h2 class="projects__title-main">Projetos</h2>
+                <div class="projects__grid">
+
+                    <div class="projects__item" data-title="bot-grm">
+                        <img src="img/project-5.png" alt="" class="projects__img">
+
+                        <div class="projects__content-wrap">
                             <div class="projects__text">
-                                <p>Bot Pessoal: Assistente com IA.</p>
+                                <p class="projects__title">Bot GRM: Bot de apontamentos do sistema GRM.</p>
                                 <p class="projects__desc">Chatbot</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="projects__item" data-title="easyfocus">
-                            <img src="img/project-3.png" alt="" class="projects__img">
-                            <div class="projects__text">
-                                <p>EasyFocus: Gerenciador de tarefas minimalista.</p>
-                                <p class="projects__desc">Web App</p>
-                            </div>
-                        </div>
-
-                        <div class="projects__item" data-title="focus-timer">
-                            <img src="img/project-2.png" alt="" class="projects__img">
+                    <div class="projects__item" data-title="bot-pessoal">
+                        <img src="img/project-1.png" alt="" class="projects__img">
                         <div class="projects__text">
-                            <p>Focus Timer: Monitor inteligente de tempo de foco.</p>
+                            <p class="projects__title">Bot Pessoal: Assistente com IA.</p>
+                            <p class="projects__desc">Chatbot</p>
+                        </div>
+                    </div>
+
+                    <div class="projects__item" data-title="easyfocus">
+                        <img src="img/project-3.png" alt="" class="projects__img">
+                        <div class="projects__text">
+                            <p class="projects__title">EasyFocus: Gerenciador de tarefas minimalista.</p>
+                            <p class="projects__desc">Web App</p>
+                        </div>
+                    </div>
+
+                    <div class="projects__item" data-title="focus-timer">
+                        <img src="img/project-2.png" alt="" class="projects__img">
+                        <div class="projects__text">
+                            <p class="projects__title">Focus Timer: Monitor inteligente de tempo de foco.</p>
                             <p class="projects__desc">Desktop App</p>
                         </div>
                     </div>
-    
+
                     <div class="projects__item" data-title="flash-gen">
                         <img src="img/project-4.png" alt="" class="projects__img">
 
                         <div class="projects__content-wrap">
                             <div class="projects__text">
-                                <p>Flash Gen: Gerador de flash cards com IA.</p>
+                                <p class="projects__title">Flash Gen: Gerador de flash cards com IA.</p>
                                 <p class="projects__desc">Desktop App</p>
                             </div>
                         </div>
@@ -175,20 +200,21 @@
 
                         <div class="projects__content-wrap">
                             <div class="projects__text">
-                                <p>Assistente do tempo: agente de IA que envia informações climáticas.</p>
+                                <p class="projects__title">Assistente do tempo: agente de IA que envia informações
+                                    climáticas.</p>
                                 <p class="projects__desc">Desktop App</p>
                             </div>
                         </div>
                     </div>
 
-                </div> 
+                </div>
             </div>
         </section>
 
-        <section class="contact" id="contact"> 
+        <section class="contact" id="contact">
             <div class="contact__title">
                 <h2>Entre em Contato</h2>
-                <p class="contact__desc">Se quiser conversar sobre projetos, oportunidades ou ideias, é só mandar uma mensagem.</p>
+                <p class="contact__desc">Se quiser conversar sobre projetos, oportunidades ou ideias entre em contato.</p>
             </div>
 
             <div class="contact__container">
@@ -218,7 +244,7 @@
                             <h3>Disponibilidade</h3>
                             <p>Mariana, MG - Brasil | Remoto</p>
                         </div>
-    
+
                         <div class="contact__text">
                             <h3>Contato</h3>
                             <p>mateustito166@gmail.com</p>
@@ -229,13 +255,13 @@
                         <a href="https://github.com/MTito2" target="_blank">
                             <img src="icons/git-icon.svg" alt="Abrir perfil GitHub">
                         </a>
-                        
+
                         <a href="https://www.linkedin.com/in/mateus-da-cunha-tito/" target="_blank">
-                            <img src="icons/linkedin-icon.svg" alt="Abrir perfil linkedIn">
+                            <img src="icons/linkedin-white-icon.svg" alt="Abrir perfil linkedIn">
                         </a>
 
                         <a href="https://www.instagram.com/m.cunhat/" target="_blank">
-                        <img src="icons/instagram-icon.svg" alt="Abrir perfil instagram">
+                            <img src="icons/instagram-white-icon.svg" alt="Abrir perfil instagram">
                         </a>
 
                     </div>
@@ -246,12 +272,17 @@
     </main>
     <footer class="footer">
         <p class="footer__desc">© 2026 · Mariana, MG — Brasil</p>
-        <p class="footer__desc" >Mateus Cunha — Desenvolvedor de Software</p>
+        <p class="footer__desc">Mateus Cunha — Desenvolvedor de Software</p>
         <div>
-            <a class="footer__link" href="https://github.com/MTito2" target="_blank">GitHub</a> · <a class="footer__link" href="https://www.linkedin.com/in/mateus-da-cunha-tito/" target="_blank">LinkedIn</a> · <a class="footer__link" href="https://mail.google.com/mail/?view=cm&fs=1&to=mateustito166@gmail.com&su=Contato%20do%20Portfólio&body=Olá%20Mateus,%20estou%20entrando%20em%20contato%20através%20do%20seu%20portfólio." target="_blank">Email</a>
+            <a class="footer__link" href="https://github.com/MTito2" target="_blank">GitHub</a> · <a
+                class="footer__link" href="https://www.linkedin.com/in/mateus-da-cunha-tito/"
+                target="_blank">LinkedIn</a> · <a class="footer__link"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=mateustito166@gmail.com&su=Contato%20do%20Portfólio&body=Olá%20Mateus,%20estou%20entrando%20em%20contato%20através%20do%20seu%20portfólio."
+                target="_blank">Email</a>
         </div>
     </footer>
 
     <script src="js/home.js"></script>
 </body>
+
 </html>
