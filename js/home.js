@@ -18,20 +18,40 @@ function createMenuContainer() {
     items.forEach(item => {
         const menuItem = document.createElement("li")
         menuItem.className = "hero__menu-item"
-
         menuItem.textContent = item
+
+        menuItem.addEventListener("click", () => {
+            let targetId = ""
+
+            if (item === "Sobre") targetId = "#about"
+            if (item === "Projetos") targetId = "#projects"
+            if (item === "Contato") targetId = "#contact"
+
+            const section = document.querySelector(targetId)
+            section.scrollIntoView({ behavior: "smooth" })
+        })
+
         menuList.appendChild(menuItem)
     })
 
     menuContainer.appendChild(menuList)
-
     return menuContainer
 }
 
+const menuContainer = createMenuContainer()
+hero.appendChild(menuContainer) 
+
 menuEl.addEventListener("click", () => {
-    const menuContainer = createMenuContainer()
-    hero.appendChild(menuContainer)
+    menuContainer.classList.toggle("hero__menu-container-show")
 })
+
+document.addEventListener("click", (event) => {
+    if (!menuContainer.contains(event.target) &&
+    !menuEl.contains(event.target)) {
+        menuContainer.classList.remove("hero__menu-container-show")
+    }
+})
+
 
 projectsItem.forEach(element => {
     pageList.push(element.dataset.title + ".html")
